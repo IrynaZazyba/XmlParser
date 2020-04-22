@@ -16,6 +16,8 @@ import java.util.Set;
 public class StaxTestParser {
 
     private static final String TIME_FORMAT="HH:mm:ss";
+    private final static String ATTRIBUTE_ID="id";
+
 
     public static Set<Test> process(XMLStreamReader reader) throws XMLStreamException {
 
@@ -36,13 +38,13 @@ public class StaxTestParser {
                     switch (elementName) {
                         case TEST:
                             test = new Test();
-                            String id = reader.getAttributeValue(null, "id");
+                            String id = reader.getAttributeValue(null, ATTRIBUTE_ID);
                             test.setId(id);
                             break;
                         case TEST_GROUP:
                             testGroup = new TestGroup();
                             int testGroupId =
-                                    Integer.parseInt(reader.getAttributeValue(null, "id"));
+                                    Integer.parseInt(reader.getAttributeValue(null, ATTRIBUTE_ID));
                             testGroup.setId(testGroupId);
                             break;
                         case QUESTIONS:
@@ -50,7 +52,7 @@ public class StaxTestParser {
                             break;
                         case QUESTION:
                             question=new Question();
-                            String questionId = reader.getAttributeValue(null, "id");
+                            String questionId = reader.getAttributeValue(null, ATTRIBUTE_ID);
                             question.setId(questionId);
                             break;
                         case ANSWERS:
@@ -58,7 +60,7 @@ public class StaxTestParser {
                             break;
                         case ANSWER:
                             answer=new Answer();
-                            String answerId = reader.getAttributeValue(null, "id");
+                            String answerId = reader.getAttributeValue(null, ATTRIBUTE_ID);
                             answer.setId(answerId);
                             break;
 

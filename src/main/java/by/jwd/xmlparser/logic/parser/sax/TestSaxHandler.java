@@ -19,6 +19,8 @@ public class TestSaxHandler extends DefaultHandler {
 
     private final static String DATE_FORMAT="yyyy-MM-dd";
     private final static String TIME_FORMAT="HH:mm:ss";
+    private final static String ATTRIBUTE_ID="id";
+
 
     private Set<Test> tests = new HashSet<>();
     private Set<Question> questions;
@@ -46,20 +48,20 @@ public class TestSaxHandler extends DefaultHandler {
         text = new StringBuilder();
         if (qName.equals("test")) {
             test = new Test();
-            test.setId(attributes.getValue("id"));
+            test.setId(attributes.getValue(ATTRIBUTE_ID));
         } else if (qName.equals("questions")) {
             questions = new HashSet<>();
         } else if (qName.equals("question")) {
             question = new Question();
-            question.setId(attributes.getValue("id"));
+            question.setId(attributes.getValue(ATTRIBUTE_ID));
         } else if (qName.equals("answers")) {
             answers = new HashSet<>();
         } else if (qName.equals("answer")) {
             answer = new Answer();
-            answer.setId(attributes.getValue("id"));
+            answer.setId(attributes.getValue(ATTRIBUTE_ID));
         } else if (qName.equals("test-group")) {
             testGroup = new TestGroup();
-            testGroup.setId(Integer.parseInt(attributes.getValue("id")));
+            testGroup.setId(Integer.parseInt(attributes.getValue(ATTRIBUTE_ID)));
 
         }
     }
