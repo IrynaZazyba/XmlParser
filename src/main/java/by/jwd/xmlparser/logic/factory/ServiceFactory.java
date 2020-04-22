@@ -1,8 +1,10 @@
 package by.jwd.xmlparser.logic.factory;
 
 import by.jwd.xmlparser.logic.UploadFileService;
+import by.jwd.xmlparser.logic.XMLParserService;
 import by.jwd.xmlparser.logic.XmlValidatorService;
 import by.jwd.xmlparser.logic.impl.UploadFileServiceImpl;
+import by.jwd.xmlparser.logic.impl.XMLParserServiceImpl;
 import by.jwd.xmlparser.logic.impl.XmlValidatorServiceImpl;
 
 public class ServiceFactory {
@@ -11,6 +13,7 @@ public class ServiceFactory {
 
     private UploadFileService uploadFileService = new UploadFileServiceImpl();
     private XmlValidatorService xmlValidatorService = new XmlValidatorServiceImpl();
+    private XMLParserServiceImpl xmlParserService=new XMLParserServiceImpl();
 
     private ServiceFactory() {
     }
@@ -25,5 +28,9 @@ public class ServiceFactory {
 
     public XmlValidatorService getXmlValidatorService() {
         return xmlValidatorService;
+    }
+
+    public XMLParserService getXmlParserService(){
+        return xmlParserService;
     }
 }

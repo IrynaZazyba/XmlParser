@@ -1,4 +1,4 @@
-package by.jwd.xmlparser.logic.parser;
+package by.jwd.xmlparser.logic;
 
 public enum ParserType {
 

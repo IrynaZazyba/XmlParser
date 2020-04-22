@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tc:tests xmlns:tc="http://www.jwd.epm.by/test"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.jwd.epm.by/test /xsd/tests.xsd">
+
+    <test id="T-1">
+        <title>Article</title>
+        <key>5308</key>
+        <time>00:35:00</time>
+        <test-group id="1">
+            <group-title>English</group-title>
+        </test-group>
+        <questions>
+            <question id="Q-8">
+                <question-text>Canada is one of ___ biggest countries in the world.</question-text>
+                <answers>
+                    <answer id="A-17">
+                        <answer-text>a</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-18">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-19">
+                        <answer-text>the</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A-20">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-9">
+                <question-text>I want to see ___ movie. I don't care which one we see. I just want to get out of the house tonight.
+                </question-text>
+                <answers>
+                    <answer id="A-25">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-26">
+                        <answer-text>a</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A-27">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-28">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-10">
+                <question-text>Do you like ___ my new glasses?</question-text>
+                <answers>
+                    <answer id="A-21">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-22">
+                        <answer-text>a</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-23">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-24">
+                        <answer-text>-</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-11">
+                <question-text>I'd like to introduce you to ___ my brother.</question-text>
+                <answers>
+                    <answer id="A-32">
+                        <answer-text>a</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-33">
+                        <answer-text>-</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A-34">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-2">
+                <question-text>It's really hot here. We live close to ___ equator.</question-text>
+                <answers>
+                    <answer id="A-29">
+                        <answer-text>the</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A-30">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-31">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-13">
+                <question-text>I am ___ teacher. My husband is an accountant.</question-text>
+                <answers>
+                    <answer id="A-38">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-39">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-40">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-41">
+                        <answer-text>a</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-14">
+                <question-text>She is ___ tallest girl in the school.</question-text>
+                <answers>
+                    <answer id="A-42">
+                        <answer-text>the</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A-43">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-44">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-45">
+                        <answer-text>a</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-3">
+                <question-text>Where is ___ nearest gas station?</question-text>
+                <answers>
+                    <answer id="A-54">
+                        <answer-text>a</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-55">
+                        <answer-text>the</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A-56">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-57">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-4">
+                <question-text>What does he do for ___ living?</question-text>
+                <answers>
+                    <answer id="A-46">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-47">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-48">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-49">
+                        <answer-text>a</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q-5">
+                <question-text>Do you like playing ___ baseball?</question-text>
+                <answers>
+                    <answer id="A-50">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-51">
+                        <answer-text>an</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A-52">
+                        <answer-text>-</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A-53">
+                        <answer-text>the</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+        </questions>
+    </test>
+    <test id="T-2">
+        <title>Modal verb</title>
+        <key>5308</key>
+        <time>00:35:00</time>
+        <test-group id="1">
+            <group-title>English</group-title>
+        </test-group>
+        <questions>
+            <question id="Q2-8">
+                <question-text>I may ___ able to come to your party if I have the time.</question-text>
+                <answers>
+                    <answer id="A2-17">
+                        <answer-text>be</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A2-18">
+                        <answer-text>can</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-19">
+                        <answer-text>have to</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-20">
+                        <answer-text>should</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-9">
+                <question-text>I ___ speak French without a problem now because I have had many lessons.
+                </question-text>
+                <answers>
+                    <answer id="A2-25">
+                        <answer-text>don't</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-26">
+                        <answer-text>can</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A2-27">
+                        <answer-text>may</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-28">
+                        <answer-text>will</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-10">
+                <question-text>You ___ have been really angry when your boss tried to embarrass you in front of your co-workers.
+                </question-text>
+                <answers>
+                    <answer id="A2-21">
+                        <answer-text>will</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-22">
+                        <answer-text>can</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-23">
+                        <answer-text>should</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-24">
+                        <answer-text>must</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-11">
+                <question-text>If you tell your boss off, you ___ surely be fired.</question-text>
+                <answers>
+                    <answer id="A2-32">
+                        <answer-text>will</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A2-33">
+                        <answer-text>may</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-34">
+                        <answer-text>must</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-2">
+                <question-text>Our son, Ted, ___ use a new car because his old car is always breaking down on him. So, we're going to buy him a brand-new car for his birthday.</question-text>
+                <answers>
+                    <answer id="A2-29">
+                        <answer-text>will</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-30">
+                        <answer-text>could</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A2-31">
+                        <answer-text>have to</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-98">
+                        <answer-text>should</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-13">
+                <question-text>They ___ do their homework today because it is a holiday at the school.</question-text>
+                <answers>
+                    <answer id="A2-38">
+                        <answer-text>don't have</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-39">
+                        <answer-text>shouldn't</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-40">
+                        <answer-text>don't have to</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A2-41">
+                        <answer-text>have to</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-14">
+                <question-text>Do you ___ clean the house every day or every week?</question-text>
+                <answers>
+                    <answer id="A2-42">
+                        <answer-text>have to</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A2-43">
+                        <answer-text>must</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-44">
+                        <answer-text>have</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-45">
+                        <answer-text>must to</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-3">
+                <question-text> I ____ do their homework today because it is a holiday at the school.</question-text>
+                <answers>
+                    <answer id="A2-54">
+                        <answer-text>ought</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-55">
+                        <answer-text>shouldn't</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-56">
+                        <answer-text>should to</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-57">
+                        <answer-text>ought to</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-4">
+                <question-text> She ___ be crazy! She wants to backpack through the Andes by herself.</question-text>
+                <answers>
+                    <answer id="A2-46">
+                        <answer-text>have to</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-47">
+                        <answer-text>may</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-48">
+                        <answer-text>must</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A2-49">
+                        <answer-text>can</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q2-5">
+                <question-text>He ___ give me a straight answer. He avoided my questions the whole time.</question-text>
+                <answers>
+                    <answer id="A2-50">
+                        <answer-text>would</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-51">
+                        <answer-text>shouldn't</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-52">
+                        <answer-text>must</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A2-53">
+                        <answer-text>wouldn't</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+        </questions>
+    </test>
+    <test id="T-3">
+        <title>Verb to be</title>
+        <key>8739</key>
+        <time>00:20:00</time>
+        <test-group id="1">
+            <group-title>English</group-title>
+        </test-group>
+        <questions>
+            <question id="Q3-8">
+                <question-text>I ___ a girl.</question-text>
+                <answers>
+                    <answer id="A3-17">
+                        <answer-text>is</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-18">
+                        <answer-text>am</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-19">
+                        <answer-text>are</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-9">
+                <question-text>Is ___ snow?
+                </question-text>
+                <answers>
+                    <answer id="A3-25">
+                        <answer-text>is</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-26">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-27">
+                        <answer-text>it</answer-text>
+                        <result>true</result>
+                    </answer>
+
+                </answers>
+            </question>
+            <question id="Q3-10">
+                <question-text> ___ you from Sheffield?
+                </question-text>
+                <answers>
+                    <answer id="A3-21">
+                        <answer-text>is</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-22">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-23">
+                        <answer-text>are</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-24">
+                        <answer-text>am</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-11">
+                <question-text>Maria's grandmother ___ from Brazil</question-text>
+                <answers>
+                    <answer id="A3-32">
+                        <answer-text>are</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-33">
+                        <answer-text>is</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-34">
+                        <answer-text>am</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-2">
+                <question-text>Hey John! We ___ here.</question-text>
+                <answers>
+                    <answer id="A3-29">
+                        <answer-text>are</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-30">
+                        <answer-text>is</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-31">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-98">
+                        <answer-text>be</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-13">
+                <question-text>What time ___ it?</question-text>
+                <answers>
+                    <answer id="A3-38">
+                        <answer-text>now</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-39">
+                        <answer-text>am</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-40">
+                        <answer-text>is</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-41">
+                        <answer-text>are</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-14">
+                <question-text>Trixi and Susi ___  my cats.</question-text>
+                <answers>
+                    <answer id="A3-42">
+                        <answer-text>am</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-43">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-44">
+                        <answer-text>is</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-45">
+                        <answer-text>are</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-3">
+                <question-text>The pupils ___  not at school today.</question-text>
+                <answers>
+                    <answer id="A3-54">
+                        <answer-text>is</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-55">
+                        <answer-text>are</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-56">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-4">
+                <question-text> It ___  8 o'clock.</question-text>
+                <answers>
+                    <answer id="A3-46">
+                        <answer-text>be</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-47">
+                        <answer-text>am</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-48">
+                        <answer-text>are</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-49">
+                        <answer-text>is</answer-text>
+                        <result>true</result>
+                    </answer>
+                </answers>
+            </question>
+            <question id="Q3-5">
+                <question-text>They ___  in the same class.</question-text>
+                <answers>
+                    <answer id="A3-50">
+                        <answer-text>are</answer-text>
+                        <result>true</result>
+                    </answer>
+                    <answer id="A3-51">
+                        <answer-text>-</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-52">
+                        <answer-text>is</answer-text>
+                        <result>false</result>
+                    </answer>
+                    <answer id="A3-53">
+                        <answer-text>be</answer-text>
+                        <result>false</result>
+                    </answer>
+                </answers>
+            </question>
+        </questions>
+    </test>
+
+</tc:tests>

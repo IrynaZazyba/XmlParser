@@ -1,4 +1,4 @@
-package by.jwd.xmlparser.logic.parser.stax;
+package by.jwd.xmlparser.dao.parser.stax;
 
 public interface XMLStreamConstants {
     //todo delete unused

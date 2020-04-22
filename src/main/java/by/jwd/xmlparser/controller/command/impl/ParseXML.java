@@ -3,11 +3,9 @@ package by.jwd.xmlparser.controller.command.impl;
 import by.jwd.xmlparser.bean.Test;
 import by.jwd.xmlparser.controller.JspPageName;
 import by.jwd.xmlparser.controller.command.Command;
-import by.jwd.xmlparser.logic.UploadFileService;
-import by.jwd.xmlparser.logic.UploadServiceException;
+import by.jwd.xmlparser.logic.*;
+import by.jwd.xmlparser.logic.impl.XMLParserServiceImpl;
 import by.jwd.xmlparser.logic.factory.ServiceFactory;
-import by.jwd.xmlparser.logic.parser.ParserType;
-import by.jwd.xmlparser.logic.parser.XMLParserFacade;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -39,12 +37,12 @@ public class ParseXML implements Command {
         ServiceFactory serviceFactory = ServiceFactory.getInstance();
         UploadFileService uploadFileService = serviceFactory.getUploadFileService();
 
-        String fileName;
+        String fileLocation;
         try {
-            fileName = uploadFileService.uploadFile(realPath, request.getParts());
+            fileLocation = uploadFileService.uploadFile(realPath, request.getParts());
 
-            XMLParserFacade xmlParserFacade = new XMLParserFacade();
-            Set<Test> tests = xmlParserFacade.parse(fileName, ParserType.getParserType(type));
+            XMLParserService xmlParserService = serviceFactory.getXmlParserService();
+            Set<Test> tests = xmlParserService.parse(fileLocation, ParserType.getParserType(type));
 
             if (tests != null) {
 

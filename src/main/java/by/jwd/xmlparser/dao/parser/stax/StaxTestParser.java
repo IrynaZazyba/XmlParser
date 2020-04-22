@@ -1,10 +1,10 @@
-package by.jwd.xmlparser.logic.parser.stax;
+package by.jwd.xmlparser.dao.parser.stax;
 
 import by.jwd.xmlparser.bean.Answer;
 import by.jwd.xmlparser.bean.Question;
 import by.jwd.xmlparser.bean.Test;
 import by.jwd.xmlparser.bean.TestGroup;
-import by.jwd.xmlparser.logic.parser.TestTagName;
+import by.jwd.xmlparser.dao.parser.TestTagName;
 
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;

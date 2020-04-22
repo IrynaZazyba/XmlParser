@@ -1,10 +1,10 @@
-package by.jwd.xmlparser.logic.parser.sax;
+package by.jwd.xmlparser.dao.parser.sax;
 
 import by.jwd.xmlparser.bean.Answer;
 import by.jwd.xmlparser.bean.Question;
 import by.jwd.xmlparser.bean.Test;
 import by.jwd.xmlparser.bean.TestGroup;
-import by.jwd.xmlparser.logic.parser.TestTagName;
+import by.jwd.xmlparser.dao.parser.TestTagName;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -20,6 +20,7 @@ public class TestSaxHandler extends DefaultHandler {
     private final static String DATE_FORMAT="yyyy-MM-dd";
     private final static String TIME_FORMAT="HH:mm:ss";
     private final static String ATTRIBUTE_ID="id";
+    private final static String PREFIX_XML_ROOT_TEG="tc:";
 
 
     private Set<Test> tests = new HashSet<>();
@@ -46,20 +47,20 @@ public class TestSaxHandler extends DefaultHandler {
                              String qName, Attributes attributes) throws SAXException {
 
         text = new StringBuilder();
-        if (qName.equals("test")) {
+        if (qName.equals(TestTagName.getLowerCase(TestTagName.TEST))) {
             test = new Test();
             test.setId(attributes.getValue(ATTRIBUTE_ID));
-        } else if (qName.equals("questions")) {
+        } else if (qName.equals(TestTagName.getLowerCase(TestTagName.QUESTIONS))) {
             questions = new HashSet<>();
-        } else if (qName.equals("question")) {
+        } else if (qName.equals(TestTagName.getLowerCase(TestTagName.QUESTION))) {
             question = new Question();
             question.setId(attributes.getValue(ATTRIBUTE_ID));
-        } else if (qName.equals("answers")) {
+        } else if (qName.equals(TestTagName.getLowerCase(TestTagName.ANSWERS))) {
             answers = new HashSet<>();
-        } else if (qName.equals("answer")) {
+        } else if (qName.equals(TestTagName.getLowerCase(TestTagName.ANSWER))) {
             answer = new Answer();
             answer.setId(attributes.getValue(ATTRIBUTE_ID));
-        } else if (qName.equals("test-group")) {
+        } else if (qName.equals(TestTagName.getLowerCase(TestTagName.TEST_GROUP))) {
             testGroup = new TestGroup();
             testGroup.setId(Integer.parseInt(attributes.getValue(ATTRIBUTE_ID)));
 
@@ -72,7 +73,7 @@ public class TestSaxHandler extends DefaultHandler {
 
     public void endElement(String uri, String localName, String qName) throws SAXException {
         TestTagName tagName;
-        if (qName.equals("tc:tests")) {
+        if (qName.equals(PREFIX_XML_ROOT_TEG+TestTagName.getLowerCase(TestTagName.TESTS))) {
             tagName = TestTagName.valueOf(TestTagName.TESTS.toString());
         } else {
             tagName = TestTagName.valueOf(qName.toUpperCase().replace("-", "_"));

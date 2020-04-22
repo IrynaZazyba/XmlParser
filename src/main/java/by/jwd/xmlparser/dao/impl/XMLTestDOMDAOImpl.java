@@ -1,10 +1,11 @@
-package by.jwd.xmlparser.logic.parser.dom;
+package by.jwd.xmlparser.dao.impl;
 
 import by.jwd.xmlparser.bean.Answer;
 import by.jwd.xmlparser.bean.Question;
 import by.jwd.xmlparser.bean.Test;
 import by.jwd.xmlparser.bean.TestGroup;
-import by.jwd.xmlparser.logic.parser.TestTagName;
+import by.jwd.xmlparser.dao.XmlTestDAO;
+import by.jwd.xmlparser.dao.parser.TestTagName;
 import org.apache.xerces.parsers.DOMParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -17,12 +18,13 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DOMTestParser {
+public class XMLTestDOMDAOImpl implements XmlTestDAO {
 
     private final static String TIME_FORMATTER="HH:mm:ss";
     private final static String ATTRIBUTE_ID="id";
 
-    public static Set<Test> getTests(String path) throws IOException, SAXException {
+    @Override
+    public Set<Test> getAllTests(String path) throws IOException, SAXException {
 
         DOMParser domParser = new DOMParser();
         domParser.parse(path);
