@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.jwd.epm.by/test"
+        xmlns:tns="http://www.jwd.epm.by/test">
+
+    <element name="tests">
+        <complexType>
+            <sequence>
+                <element name="test" type="tns:Test" minOccurs="1" maxOccurs="unbounded"/>
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Test">
+        <sequence>
+            <element name="title" type="string"/>
+            <element name="key" type="int"/>
+            <element name="time" type="time"/>
+            <element name="deleted_at" type="date" minOccurs="0"/>
+            <element name="test-group" type="tns:TestGroup"/>
+            <element name="questions">
+                <complexType>
+                    <sequence>
+                        <element name="question" type="tns:Question" minOccurs="10" maxOccurs="unbounded"/>
+                    </sequence>
+                </complexType>
+            </element>
+
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+    </complexType>
+
+
+    <complexType name="Question">
+        <sequence>
+            <element name="question-text" type="string"/>
+            <element name="answers">
+                <complexType>
+                    <sequence>
+                        <element name="answer" type="tns:Answer" minOccurs="3" maxOccurs="4"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="deleted_at" type="date" minOccurs="0"/>
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+    </complexType>
+
+
+    <complexType name="Answer">
+        <sequence>
+            <element name="answer-text" type="string"/>
+            <element name="result" type="boolean"/>
+            <element name="deleted_at" type="date" minOccurs="0"/>
+        </sequence>
+        <attribute name="id" type="ID" use="required"/>
+    </complexType>
+
+    <complexType name="TestGroup">
+        <sequence>
+            <element name="group-title" type="tns:TestGroupValue"/>
+            <element name="deleted_at" type="date" minOccurs="0"/>
+        </sequence>
+        <attribute name="id" type="int" use="required"/>
+    </complexType>
+
+    <simpleType name="TestGroupValue">
+        <restriction base="string">
+            <maxLength value="15"/>
+        </restriction>
+    </simpleType>
+
+
+</schema>
+
+
+
+
+
