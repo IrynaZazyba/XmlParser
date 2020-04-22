@@ -11,9 +11,9 @@ public class ServiceFactory {
 
     private final static ServiceFactory instance = new ServiceFactory();
 
-    private UploadFileService uploadFileService = new UploadFileServiceImpl();
-    private XmlValidatorService xmlValidatorService = new XmlValidatorServiceImpl();
-    private XMLParserServiceImpl xmlParserService=new XMLParserServiceImpl();
+    private final UploadFileService uploadFileService = new UploadFileServiceImpl();
+    private final XmlValidatorService xmlValidatorService = new XmlValidatorServiceImpl();
+    private final XMLParserServiceImpl xmlParserService=new XMLParserServiceImpl();
 
     private ServiceFactory() {
     }

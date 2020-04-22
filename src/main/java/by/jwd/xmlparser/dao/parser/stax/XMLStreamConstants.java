@@ -1,7 +1,7 @@
 package by.jwd.xmlparser.dao.parser.stax;
 
 public interface XMLStreamConstants {
-    //todo delete unused
+
     int START_ELEMENT = 1;
     int END_ELEMENT = 2;
     int PROCESSING_INSTRUCTION = 3;

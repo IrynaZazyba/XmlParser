@@ -3,6 +3,8 @@ package by.jwd.xmlparser.logic;
 public class UploadServiceException extends Exception {
 
 
+    private static final long serialVersionUID = -9137688360429300451L;
+
     public UploadServiceException() {
     }
 

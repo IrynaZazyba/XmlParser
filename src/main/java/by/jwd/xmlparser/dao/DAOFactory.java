@@ -8,9 +8,9 @@ public class DAOFactory {
 
     private final static DAOFactory instance = new DAOFactory();
 
-    private XmlTestDAO xmlTestSaxDAO = new XmlTestSaxDAOImpl();
-    private XmlTestDAO xmlTestStaxDAO = new XmlTestStaxDAOImpl();
-    private XmlTestDAO xmlTestDOMDAO = new XMLTestDOMDAOImpl();
+    private final XmlTestDAO xmlTestSaxDAO = new XmlTestSaxDAOImpl();
+    private final XmlTestDAO xmlTestStaxDAO = new XmlTestStaxDAOImpl();
+    private final XmlTestDAO xmlTestDOMDAO = new XMLTestDOMDAOImpl();
 
 
     private DAOFactory() {

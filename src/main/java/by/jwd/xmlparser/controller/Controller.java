@@ -3,7 +3,6 @@ package by.jwd.xmlparser.controller;
 import by.jwd.xmlparser.controller.command.Command;
 import by.jwd.xmlparser.controller.command.CommandProvider;
 
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -17,12 +16,14 @@ import java.io.IOException;
 
 public class Controller extends HttpServlet {
 
+    private static final long serialVersionUID = 2114054049422733828L;
     private static final String REQUEST_PARAMETER="command";
 
     public Controller(){
         super();
 
     }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.sendRedirect(JspPageName.INDEX_JSP);

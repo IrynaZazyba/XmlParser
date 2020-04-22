@@ -93,7 +93,7 @@ public class XMLTestDOMDAOImpl implements XmlTestDAO {
 
     }
 
-    private static Element getSingleChild(Element element, TestTagName testTagName) {
+    private Element getSingleChild(Element element, TestTagName testTagName) {
         String childName=testTagName.toString().toLowerCase().replace("_","-");
         NodeList elementsByTagName = element.getElementsByTagName(childName);
         return (Element) elementsByTagName.item(0);
