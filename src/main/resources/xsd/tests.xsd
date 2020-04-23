@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         targetNamespace="http://www.jwd.epm.by/test"
-        xmlns:tns="http://www.jwd.epm.by/test">
+        xmlns:tc="http://www.jwd.epm.by/test">
 
     <element name="tests">
         <complexType>
             <sequence>
-                <element name="test" type="tns:Test" minOccurs="1" maxOccurs="unbounded"/>
+                <element name="test" type="tc:Test" minOccurs="1" maxOccurs="unbounded"/>
             </sequence>
         </complexType>
     </element>
@@ -17,11 +17,11 @@
             <element name="key" type="int"/>
             <element name="time" type="time"/>
             <element name="deleted_at" type="date" minOccurs="0"/>
-            <element name="test-group" type="tns:TestGroup"/>
+            <element name="test-group" type="tc:TestGroup"/>
             <element name="questions">
                 <complexType>
                     <sequence>
-                        <element name="question" type="tns:Question" minOccurs="10" maxOccurs="unbounded"/>
+                        <element name="question" type="tc:Question" minOccurs="10" maxOccurs="unbounded"/>
                     </sequence>
                 </complexType>
             </element>
@@ -37,7 +37,7 @@
             <element name="answers">
                 <complexType>
                     <sequence>
-                        <element name="answer" type="tns:Answer" minOccurs="3" maxOccurs="4"/>
+                        <element name="answer" type="tc:Answer" minOccurs="3" maxOccurs="4"/>
                     </sequence>
                 </complexType>
             </element>
@@ -58,7 +58,7 @@
 
     <complexType name="TestGroup">
         <sequence>
-            <element name="group-title" type="tns:TestGroupValue"/>
+            <element name="group-title" type="tc:TestGroupValue"/>
             <element name="deleted_at" type="date" minOccurs="0"/>
         </sequence>
         <attribute name="id" type="int" use="required"/>
